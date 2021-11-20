@@ -13,9 +13,9 @@
     }
 
     .CPF {
-        background-color: black;
+        background-color: black
         color: white;
-        width: 10px;
+        width: 50px;
         box-shadow: 0px 0px 4px #000;
         text-align: center;
         margin: 0 auto;
@@ -42,7 +42,7 @@
     }
     .enviar {
         width: 80px;
-        background-color: black;
+        background-color: red;
     }
         .campo {
             background-color: red;
