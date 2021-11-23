@@ -49,5 +49,33 @@
             resultado.innerHTML = 'O valor da multiplicação entre ' + valor1 + ' e ' + valor2 + ' é igual a ' + multiplicacao;
         }
     </script>
+    </div>
+    <div class="radar">
+    <h1>Sistema de multas - Aula 06</h1>
+    <p>Velocidade do carro</p>
+    <div class="caixa">
+        <input type="number" name="velocidade" id="velocidade"> <strong id="quilometros">KM/h</strong>
+        <input type="submit" value="Verificar" onclick="calcular()">
+    </div>
+
+    <div id="vResultado"></div>
+   <script>
+       function calcular(){
+            let velocidade = document.getElementById('velocidade');
+            let vResultado = document.getElementById('vResultado');
+            let vel = Number(velocidade.value);
+            vResultado.innerHTML = ` Sua velocidade atual é de <strong>${vel} KM/h</strong>`;
+            // res.innerHTML = 'Sua velocidade atual é de <strong> ' + vel + 'KM/h <strong>';
+                if(vel > 50){
+                    vResultado.innerHTML += ` Você está <strong>MULTADO!</strong>`;
+                    // alert(`Você está MULTADO! Pois sua velocidade é ${vel} KM/h.`);
+                    // alert('Você está MULTADO! Pois sua velocaide é ' + vel + KM/h.`);
+                } else {
+                    vResultado.innerHTML += ` Parabéns, você não foi multado.`;
+                }
+        }    
+   </script>
+    </div>    
+        
 </body>
 </html>
