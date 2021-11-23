@@ -75,7 +75,24 @@
                 }
         }    
    </script>
-    </div>    
-        
+    </div>   
+    <div class="aprendendo">
+    <h2>Exercicio 04</h2>
+    <div class="aprendendo1">
+    <input type="text" name="nome" id="nome">
+    <input type="submit" id="enviarN" onclick="enviarN()">
+    </div>
+    <div class="resultado" id="resultado"></div>
+    
+    <script type="text/javascript" src="js/filesaver.js"></script>
+
+    <script>
+         function enviarN(){
+            let nome = document.getElementById("nome").value;
+            let resultado = document.getElementById("resultado").value;   
+            alert (`Olá seu nome é ${nome}`)
+        }
+    </script>
+    </div>
 </body>
 </html>
